@@ -56,3 +56,7 @@ module.exports = {
   },
 };
 ```
+
+## 说明
+
+引用了 [water-helper-maps](https://github.com/fe6/water-helper-maps) 中的标签对照。完整标签请移步 [water-helper-maps](https://github.com/fe6/water-helper-maps/blob/master/src/maps/water-tags.json) 。
