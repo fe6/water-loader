@@ -2,7 +2,7 @@
 > 统一的 Water 标签编写规范
 
 [![@fe6/water-loader](https://img.shields.io/npm/v/@fe6/water-loader.svg?style=flat-square)](https://www.npmjs.org/package/@fe6/water-loader)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## 预览
 
@@ -32,4 +32,27 @@
 
 ![w-button](./img/loader4.png)
 
+## 使用
 
+```js
+// 配置 webpack.config.js
+module.exports = {
+  // ... 省略其他配置
+  module: {
+    rules: [
+      {
+        test: /\.vue$/,
+        use: [
+          // ... 省略其他配置
+          {
+            loader: '@fe6/water-loader',
+            options: {
+              prefix: true, // `w-button` 转译成 `Button`
+            },
+          },
+        ],
+      },
+    ],
+  },
+};
+```
