@@ -1,0 +1,40 @@
+{
+  "name": "@fe6/water-loader",
+  "description": "更快的书写 Water 标签，更好的规范编码",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint": "prettier --write \"{src,demo}/*.{js,vue}\""
+  },
+  "author": "李梦龙 <649076408@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "water",
+    "water-loader",
+    "@fe6/water-loader",
+    "webpack",
+    "loader"
+  ],
+  "homepage": "https://github.com/fe6/water-loader#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fe6/water-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fe6/water-loader/issues"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "loader-utils": "^1.2.3",
+    "water-helper-maps": "^0.1.0"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.19.1"
+  }
+}
